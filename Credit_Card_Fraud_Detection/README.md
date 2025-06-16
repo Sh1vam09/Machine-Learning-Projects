@@ -61,22 +61,15 @@ The model was evaluated on an unseen test set using key classification metrics:
 
 
 ## Requirements:
-
+```bash
 pandas
-
 numpy
-
 matplotlib
-
 seaborn
-
 scikit-learn
-
 xgboost
-
 imbalanced-learn
-
-
+```  
 ## 📌 Project Highlights
 
 End-to-end ML pipeline with visualization, preprocessing, tuning, and evaluation.
