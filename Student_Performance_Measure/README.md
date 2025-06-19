@@ -118,7 +118,9 @@ ypred = model.predict(test)
 
 **Note** : The model performs well in the mid-range (60–80) where most of the data is concentrated — with **6414 values** in that range. It is not able to predict that good for extreme values.
 
-🏁 Results Summary
+🏁 Results Summary:
+
+
 R² Score: 0.7145 — indicates strong correlation between predicted and actual exam scores.
 
 Mean Squared Error (MSE): 4.0354 — low error value suggests reliable predictions.
@@ -134,3 +136,5 @@ Performs very well in the mid-range scores (60–80), where most students lie (~
 Slightly underperforms on extreme values .
 
 🔬 Best Model: SVM after Optuna tuning.
+
+# Note: Some graphs are not rendered as they have been made using plotly 
