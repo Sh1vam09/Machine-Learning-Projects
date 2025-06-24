@@ -1,4 +1,5 @@
 streamlit
+scipy==1.10.1
 numpy
 emoji
 pickle5
@@ -6,4 +7,3 @@ nltk
 symspellpy
 gensim
 xgboost
-pip install scipy==1.10.1
