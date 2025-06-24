@@ -6,3 +6,4 @@ nltk
 symspellpy
 gensim
 xgboost
+pip install scipy==1.10.1
