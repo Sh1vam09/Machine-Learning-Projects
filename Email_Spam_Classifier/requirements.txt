@@ -2,7 +2,6 @@ streamlit
 scipy==1.10.1
 numpy
 emoji
-pickle
 nltk
 symspellpy
 gensim
