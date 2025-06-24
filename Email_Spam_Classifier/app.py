@@ -86,7 +86,7 @@ def predict(text):
     return label, proba
 
 # Streamlit UI
-st.title("📧 Email Spam Classifier")
+st.title("Email Spam Classifier")
 user_input = st.text_area("Enter your email content here:")
 
 if st.button("Predict"):
@@ -94,6 +94,6 @@ if st.button("Predict"):
         st.warning("Please enter some text.")
     else:
         label, probability = predict(user_input)
-        st.write("### Prediction:", "🛑 SPAM" if label == 1 else "✅ NOT SPAM")
+        st.write("### Prediction:", "SPAM" if label == 1 else "NOT SPAM")
         st.write(f"### Spam Probability: `{probability:.2f}`")
 # spam-env\Scripts\activate
