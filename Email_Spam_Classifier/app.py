@@ -18,11 +18,14 @@ nltk.download('wordnet')
 # Set up tools
 stop = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
+dictionary_path = os.path.join(BASE_DIR, "en-80k.txt")
 sym_spell = SymSpell(max_dictionary_edit_distance=2, prefix_length=7)
-sym_spell.load_dictionary("en-80k.txt", term_index=0, count_index=1)
-with open('model.pkl', 'rb') as f:
+sym_spell.load_dictionary(dictionary_path, term_index=0, count_index=1)
+model_path = os.path.join(BASE_DIR, "model.pkl")
+with open(model_path, "rb") as f:
     model = pickle.load(f)
-with open("w2c.pkl", "rb") as f:
+w2v_path = os.path.join(BASE_DIR, "w2c.pkl")
+with open(w2v_path, "rb") as f:
     w2v_model = pickle.load(f)
 VECTOR_SIZE = 100  
 
