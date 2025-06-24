@@ -1,0 +1,8 @@
+streamlit
+numpy
+emoji
+pickle5
+nltk
+symspellpy
+gensim
+xgboost
