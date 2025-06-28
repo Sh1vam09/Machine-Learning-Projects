@@ -31,3 +31,15 @@ The app is deployed on Streamlit Cloud.
 
 [Email-Spam-Classifier](https://email-spam-classifier-swalla.streamlit.app/) 
 
+## 🚀 Run Locally with Docker
+You can easily run this app **locally on your machine using Docker**. No need to install Python, Streamlit, or dependencies.
+### Step 1: Pull the Docker Image
+
+```bash
+docker pull rampampam933/email_spam
+```
+### Step 2: To run the image
+ ```bash
+docker run -d -p 8600:8501 rampampam933/email_spam
+```
+
