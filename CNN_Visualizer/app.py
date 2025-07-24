@@ -105,8 +105,8 @@ if st.button(" Train Model and Show Feature Maps"):
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     criterion = nn.CrossEntropyLoss()
 
-    with st.spinner("Training for 10 epochs..."):
-        for epoch in range(10):
+    with st.spinner("Training for 5 epochs..."):
+        for epoch in range(5):
             model.train()
             for images, labels in train_loader:
                 images, labels = images.to(device), labels.to(device)
