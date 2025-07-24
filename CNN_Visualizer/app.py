@@ -12,7 +12,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 target_transform_for_user_image = transforms.Compose([
     transforms.Grayscale(num_output_channels=1), 
     transforms.Resize((28, 28)),                
-    transforms.ToTensor(),                     
+    transforms.ToTensor(), ])                    
 
 train_dataset = datasets.FashionMNIST(root='./data', train=True, transform=transforms.ToTensor(), download=True)
 test_dataset = datasets.FashionMNIST(root='./data', train=False, transform=transforms.ToTensor(), download=True)
