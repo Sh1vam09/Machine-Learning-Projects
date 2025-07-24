@@ -121,5 +121,5 @@ if st.button(" Train Model and Show Feature Maps"):
     sample_img = sample_img.to(device)
     img_np = sample_img[0].squeeze(0).cpu().numpy()
     img_uint8 = (img_np * 255).clip(0, 255).astype("uint8")
-    st.image(img_uint8, caption=" Input Image", use_column_width=True)
+    st.image(img_uint8, caption=" Input Image", use_container_width=True)
     visualize_feature_maps(model, sample_img, device)
