@@ -84,12 +84,12 @@ def visualize_feature_maps(model, image_tensor, device):
 # STREAMLIT UI
 st.title(" CNN Visualizer - FashionMNIST")
 st.sidebar.header("Model Parameters")
-conv_layers = st.sidebar.slider("Number of Conv Blocks", 1, 5, 3)
+conv_layers = st.sidebar.slider("Number of Conv Blocks", 1, 4, 3)
 hidden_layers = st.sidebar.slider("Hidden Layers", 1, 4, 1)
 neurons_per_layer = st.sidebar.slider("Neurons per Hidden Layer", 32, 256, 128, step=32)
 dropout_rate = st.sidebar.slider("Dropout Rate", 0.0, 0.9, 0.3)
 pool_kernel = st.sidebar.selectbox("MaxPool Kernel", [2,3,4,5], index=0)
-pool_stride = st.sidebar.selectbox("MaxPool Stride", [1,2,3,4], index=1)
+pool_stride = st.sidebar.selectbox("MaxPool Stride", [1,2], index=1)
 
 if st.button(" Train Model and Show Feature Maps"):
     model = CNN(
